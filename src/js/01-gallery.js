@@ -18,14 +18,10 @@ function createPics(galleryItems) {
 </a>`
     }).join("")
 }
-galleryPick.addEventListener('click', onEvtPic)
 
-function onEvtPic(evt){
-    evt.preventDefault();
-    let lightBox = new SimpleLightbox(".gallery a",{
-        captionsData: "alt",
-        captionDelay: 250,
-        captionPosition:"bottom",
-    })
-}
+let lightBox = new SimpleLightbox(".gallery a",{
+    captionsData: "alt",
+    captionDelay: 250,
+    captionPosition:"bottom",
+})
 console.log(galleryItems);
